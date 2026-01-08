@@ -1,0 +1,243 @@
+/* General Layout */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+}
+header {
+    background-color: #0078d7;
+    color: white;
+    padding: 15px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Button */
+.btn-dashboard {
+    background-color: #005fa3;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-dashboard:hover {
+    background-color: #003e73;
+}
+
+/* Popup Login Form */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.popup-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+.popup-content input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.popup-content .btn {
+    background-color: #0078d7;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup-content .btn:hover {
+    background-color: #005fa3;
+}
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url("../images/hospital_bg.jpg") no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.hero-text .btn {
+    background-color: white;
+    color: #0078d7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-text .btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    text-align: center;
+}
+.services h2 {
+    margin-bottom: 30px;
+    color: #0078d7;
+}
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.service-cards .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.service-cards .card i {
+    font-size: 40px;
+    color: #0078d7;
+    margin-bottom: 10px;
+}
+
+/* Doctors Section */
+.doctors {
+    background: #e9f4ff;
+    padding: 60px 0;
+    text-align: center;
+}
+.doctor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.doctor-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.doctor-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    text-align: center;
+}
+.about p {
+    width: 80%;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    background: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
+.contact form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+    background: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+footer .socials a {
+    color: white;
+    margin: 0 8px;
+}
+footer .socials a:hover {
+    color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    .contact form {
+        width: 90%;
+    }
+    .hero {
+        height: 50vh;
+    }
+}
