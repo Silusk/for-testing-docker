@@ -7,9 +7,9 @@ app = Flask(__name__)
 app.secret_key = "secret123"
 
 # ✅ MySQL Configuration
-app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = 'db'
 app.config['MYSQL_USER'] = 'root'        # change if different
-app.config['MYSQL_PASSWORD'] = 'forachieve'
+app.config['MYSQL_PASSWORD'] = 'root'
 app.config['MYSQL_DB'] = 'hospital_db'
 
 mysql = MySQL(app)
@@ -17,9 +17,9 @@ mysql = MySQL(app)
 # ✅ Function for Direct DB Connection (for advanced queries)
 def get_db_connection():
     return MySQLdb.connect(
-        host="localhost",
+        host="db",
         user="root",
-        passwd="forachieve",
+        passwd="root",
         db="hospital_db"
     )
 

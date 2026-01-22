@@ -2,3 +2,6 @@ flask
 MySQLdb
 datetime
 gunicorn
+Flask
+Flask-MySQLdb
+mysqlclient
