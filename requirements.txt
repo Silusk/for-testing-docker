@@ -1,6 +1,5 @@
-flask
+Flask
 datetime
 gunicorn
-Flask
 Flask-MySQLdb
 mysqlclient
